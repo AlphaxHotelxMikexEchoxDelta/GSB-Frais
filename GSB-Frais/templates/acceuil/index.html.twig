@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>{{ controller_name }}! ✅</h1> 
+
+{######################## VISITEUR ########################}
+
+		<fieldset class="anim-back">
+		<legend>Visiteur</legend>
+		
+			<form action="/connection/visiteur" method="POST">
+				Identifiant :<br/>
+				<input type="text" name="id" require/><br/>
+
+				Mot de passe :<br/>
+				<input type="password" name="mdp" require/><br/>
+
+				<br/>
+				<input type="submit" value="Valider"/>
+			</form>	
+		
+		</fieldset>	
+</div>
+{% endblock %}

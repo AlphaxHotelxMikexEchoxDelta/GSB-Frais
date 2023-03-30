@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Visiteur !{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>{{ controller_name }}! ✅ <code>{{mois}}</code></h1>
+
+{######################## Forfais ########################}
+
+{% if libelles is not empty %}
+    <fieldset>
+	<legend>Frais Forfait</legend>
+	
+		<form action="/visiteur/renseigner/forfais" method="POST">
+			Saisisez la quantitee :
+			<input type="number" name="montant" required/><br/>
+
+            Saisisez le Frais
+            <select id="libelle" name="libelle">
+			{% for l in libelles %}
+                <option value="{{l.id}}">{{l.libelle}}</option>
+			{% endfor %}
+            </select><br/>
+
+			<br/>
+			<input type="submit" value="Valider"/>
+		</form>	
+		
+	</fieldset>
+{% endif %}
+
+{######################## Hors Forfais ########################}
+
+	</br>
+    <fieldset>
+	<legend>Frais Hors Forfait</legend>
+	
+		<form action="/visiteur/renseigner/hors-forfais" method="POST">
+			Saisisez le montant :
+			<input type="number" name="montant" required/><br/>
+
+			Saisisez le libelle :
+			<input type="text" name="libelle" required/><br/>
+
+			<br/>
+			<input type="submit" value="Valider"/>
+		</form>	
+		
+	</fieldset>
+
+
+{######################## Frais Valide ########################}
+
+	<br/>
+    {% if Frais is defined %}
+		<center>le frais: '<strong>{{Frais}}</strong>' à bien était ajouter</center>
+    {% else %}
+        <center>Aucun frais n'a etait ajouter à la fiche</center>
+    {% endif %}
+
+
+{######################## Fiche Valide ########################}
+	
+	<br/>
+	<code><a href="/visiteur">Retour en arriere</a></code>
+	<code><a href="/visiteur/finaliser-fiche">Finaliser la fiche</a></code>
+	
+
+
+
+
+</div>
+{% endblock %}

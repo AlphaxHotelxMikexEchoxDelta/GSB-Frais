@@ -1,0 +1,26 @@
+fieldset{
+    border-style: solid ;
+    border-color: #9BC2FA ;
+}
+
+legend{
+    background-color: #9BC2FA ;
+    color: white ;
+}
+body{
+    background-image: url('GSB.png') ;
+    background-repeat: no-repeat;
+}
+
+code:hover{
+    background-color: #C8F8DC ;
+}
+a:hover{
+    background-color: #C8F8DC ;
+    text-decoration: none ;
+}
+a:link, a:visited
+{
+    color: #000000;  
+    text-decoration: none;
+}

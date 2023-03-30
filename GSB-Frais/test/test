@@ -1,0 +1,35 @@
+######################### A COPIER ######################### 
+function getMoisSuivant($mois){
+		$numAnnee =substr( $mois,0,4);
+		$numMois =substr( $mois,4,2);
+		if($numMois=="12"){
+			$numMois = "01"; 
+			$numAnnee++;
+		}
+		else{
+			$numMois++;
+
+		}
+		if(strlen($numMois)==1)
+			$numMois="0".$numMois;
+		return $numAnnee.$numMois;
+}
+function getMoisPrecedent($mois){
+		$numAnnee =substr( $mois,0,4);
+		$numMois =substr( $mois,4,2);
+		if($numMois=="01"){
+			$numMois = "12"; 
+			$numAnnee--;
+		}
+		else{
+			$numMois--;
+		}
+		if(strlen($numMois)==1)
+			$numMois="0".$numMois;
+		return $numAnnee.$numMois;
+}
+
+######################### A COPIER ######################### 
+
+
+SELECT VIEW_DEFINITION FROM INFORMATION_SCHEMA.VIEWS WHERE TABLE_NAME =
