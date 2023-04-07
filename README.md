@@ -24,3 +24,4 @@ sudo apt install symfony-cli
 symfony composer update
 ```
 
+## Lancer l'application avec ```symfony server:start```
