@@ -70,100 +70,100 @@ class __TwigTemplate_93f4ca5105d05d315f7bda616d934476f4f71b835edae9e2b570e33ea24
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+        echo "<style>
+    .example-wrapper { margin: 5em auto; max-width: 750px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 25% ; }
+    .box {background-color: #F4F6FC;}
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>";
-        // line 13
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 13, $this->source); })()), "html", null, true);
-        echo "! ✅ <code>";
-        echo twig_escape_filter($this->env, (isset($context["mois"]) || array_key_exists("mois", $context) ? $context["mois"] : (function () { throw new RuntimeError('Variable "mois" does not exist.', 13, $this->source); })()), "html", null, true);
-        echo "</code></h1>
+    <div class=\"title is-2\">";
+        // line 12
+        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
+        echo "! <code>";
+        echo twig_escape_filter($this->env, (isset($context["mois"]) || array_key_exists("mois", $context) ? $context["mois"] : (function () { throw new RuntimeError('Variable "mois" does not exist.', 12, $this->source); })()), "html", null, true);
+        echo "</code></div>
 
 ";
-        // line 16
-        echo "    <fieldset>
+        // line 15
+        echo "    <div class=\"box\">
 \t<legend>Frais Frais Forfait</legend>
 ";
-        // line 18
+        // line 17
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["FicheFrais"]) || array_key_exists("FicheFrais", $context) ? $context["FicheFrais"] : (function () { throw new RuntimeError('Variable "FicheFrais" does not exist.', 18, $this->source); })()), "ligneFraisForfait", [], "any", false, false, false, 18));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["FicheFrais"]) || array_key_exists("FicheFrais", $context) ? $context["FicheFrais"] : (function () { throw new RuntimeError('Variable "FicheFrais" does not exist.', 17, $this->source); })()), "ligneFraisForfait", [], "any", false, false, false, 17));
         foreach ($context['_seq'] as $context["_key"] => $context["Fiche"]) {
-            // line 19
-            echo "        <fieldset>
+            // line 18
+            echo "        <div class=\"box\">
             <form method=\"POST\">
                 <input type=\"number\" name=\"id\" value=\"";
-            // line 21
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "id", [], "any", false, false, false, 21), "html", null, true);
+            // line 20
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "id", [], "any", false, false, false, 20), "html", null, true);
             echo "\" style=\"display: none;\">
                 libelle :<input type=\"text\" name=\"libelle\" value=\"";
-            // line 22
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "libelle", [], "any", false, false, false, 22), "html", null, true);
+            // line 21
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "libelle", [], "any", false, false, false, 21), "html", null, true);
             echo "\" readonly/>
                 quantite :<input type=\"number\" name=\"quantite\" value=\"";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "quantite", [], "any", false, false, false, 23), "html", null, true);
+            // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "quantite", [], "any", false, false, false, 22), "html", null, true);
             echo "\" />
-
-                <button type=\"submit\" formaction=\"/visiteur/modifier-fraisforfais\">modifier</button>
-                <button type=\"submit\" formaction=\"/visiteur/supprimer-fraisforfais\">supprimer</button>
+                </br></br>
+                <button type=\"submit\" formaction=\"/visiteur/modifier-fraisforfais\" class=\"button is-warning\">modifier</button>
+                <button type=\"submit\" formaction=\"/visiteur/supprimer-fraisforfais\" class=\"button is-danger\">supprimer</button>
             </form>
-        </fieldset>
+        </div>
 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['Fiche'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 30
-        echo "    </fieldset></br>
+        // line 29
+        echo "    </div></br>
 
 ";
-        // line 33
+        // line 32
         echo "
-    <fieldset>
+    <div class=\"box\">
 \t<legend>Frais Hors Forfait</legend>
 ";
-        // line 36
+        // line 35
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["FicheFrais"]) || array_key_exists("FicheFrais", $context) ? $context["FicheFrais"] : (function () { throw new RuntimeError('Variable "FicheFrais" does not exist.', 36, $this->source); })()), "ligneHorsForfait", [], "any", false, false, false, 36));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["FicheFrais"]) || array_key_exists("FicheFrais", $context) ? $context["FicheFrais"] : (function () { throw new RuntimeError('Variable "FicheFrais" does not exist.', 35, $this->source); })()), "ligneHorsForfait", [], "any", false, false, false, 35));
         foreach ($context['_seq'] as $context["_key"] => $context["Fiche"]) {
-            // line 37
-            echo "        <fieldset>
+            // line 36
+            echo "        <div class=\"box\">
             <form method=\"POST\">
                 
                 <input type=\"number\" name=\"id\" value=\"";
-            // line 40
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "id", [], "any", false, false, false, 40), "html", null, true);
+            // line 39
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "id", [], "any", false, false, false, 39), "html", null, true);
             echo "\" style=\"display: none;\">
                 libelle :<input type=\"text\" name=\"libelle\" value=\"";
-            // line 41
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "libelle", [], "any", false, false, false, 41), "html", null, true);
+            // line 40
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "libelle", [], "any", false, false, false, 40), "html", null, true);
             echo "\" />
                 montant :<input type=\"number\" name=\"montant\" value=\"";
-            // line 42
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "montant", [], "any", false, false, false, 42), "html", null, true);
+            // line 41
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "montant", [], "any", false, false, false, 41), "html", null, true);
             echo "\"/>
-
-                <button type=\"submit\" formaction=\"/visiteur/modifier-fraishors\">modifier</button>
-                <button type=\"submit\" formaction=\"/visiteur/supprimer-fraishors\">supprimer</button>
+                </br></br>
+                <button type=\"submit\" formaction=\"/visiteur/modifier-fraishors\" class=\"button is-warning\">modifier</button>
+                <button type=\"submit\" formaction=\"/visiteur/supprimer-fraishors\" class=\"button is-danger\">supprimer</button>
             </form>
-        </fieldset>
+        </div>
 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['Fiche'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 49
-        echo "    </fieldset>
+        // line 48
+        echo "    </div>
 
-    <center><code><a href=\"/visiteur/renseigner\">Retour en arriere</a></code></center><center><code><a href=\"/visiteur/fiche-validee\">Valider fiche frais</a></code></center>
+    <button class=\"button is-info\"><a href=\"/visiteur/renseigner\">Retour en arriere</a></button>
+    <button class=\"button is-info\"><a href=\"/visiteur/fiche-validee\">Valider fiche frais</a></button>
 
 
-</div>
+    </div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -182,7 +182,7 @@ class __TwigTemplate_93f4ca5105d05d315f7bda616d934476f4f71b835edae9e2b570e33ea24
 
     public function getDebugInfo()
     {
-        return array (  161 => 49,  148 => 42,  144 => 41,  140 => 40,  135 => 37,  131 => 36,  126 => 33,  122 => 30,  109 => 23,  105 => 22,  101 => 21,  97 => 19,  93 => 18,  89 => 16,  82 => 13,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  160 => 48,  147 => 41,  143 => 40,  139 => 39,  134 => 36,  130 => 35,  125 => 32,  121 => 29,  108 => 22,  104 => 21,  100 => 20,  96 => 18,  92 => 17,  88 => 15,  81 => 12,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -192,56 +192,56 @@ class __TwigTemplate_93f4ca5105d05d315f7bda616d934476f4f71b835edae9e2b570e33ea24
 {% block title %}Visiteur !{% endblock %}
 
 {% block body %}
-
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 5em auto; max-width: 750px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 25% ; }
+    .box {background-color: #F4F6FC;}
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>{{ controller_name }}! ✅ <code>{{mois}}</code></h1>
+    <div class=\"title is-2\">{{ controller_name }}! <code>{{mois}}</code></div>
 
 {######################## Liste Frais ########################}
-    <fieldset>
+    <div class=\"box\">
 \t<legend>Frais Frais Forfait</legend>
 {% for Fiche in FicheFrais.ligneFraisForfait %}
-        <fieldset>
+        <div class=\"box\">
             <form method=\"POST\">
                 <input type=\"number\" name=\"id\" value=\"{{Fiche.id}}\" style=\"display: none;\">
                 libelle :<input type=\"text\" name=\"libelle\" value=\"{{Fiche.libelle}}\" readonly/>
                 quantite :<input type=\"number\" name=\"quantite\" value=\"{{Fiche.quantite}}\" />
-
-                <button type=\"submit\" formaction=\"/visiteur/modifier-fraisforfais\">modifier</button>
-                <button type=\"submit\" formaction=\"/visiteur/supprimer-fraisforfais\">supprimer</button>
+                </br></br>
+                <button type=\"submit\" formaction=\"/visiteur/modifier-fraisforfais\" class=\"button is-warning\">modifier</button>
+                <button type=\"submit\" formaction=\"/visiteur/supprimer-fraisforfais\" class=\"button is-danger\">supprimer</button>
             </form>
-        </fieldset>
+        </div>
 {% endfor %}
-    </fieldset></br>
+    </div></br>
 
 {######################## Liste Hors ########################}
 
-    <fieldset>
+    <div class=\"box\">
 \t<legend>Frais Hors Forfait</legend>
 {% for Fiche in FicheFrais.ligneHorsForfait %}
-        <fieldset>
+        <div class=\"box\">
             <form method=\"POST\">
                 
                 <input type=\"number\" name=\"id\" value=\"{{Fiche.id}}\" style=\"display: none;\">
                 libelle :<input type=\"text\" name=\"libelle\" value=\"{{Fiche.libelle}}\" />
                 montant :<input type=\"number\" name=\"montant\" value=\"{{Fiche.montant}}\"/>
-
-                <button type=\"submit\" formaction=\"/visiteur/modifier-fraishors\">modifier</button>
-                <button type=\"submit\" formaction=\"/visiteur/supprimer-fraishors\">supprimer</button>
+                </br></br>
+                <button type=\"submit\" formaction=\"/visiteur/modifier-fraishors\" class=\"button is-warning\">modifier</button>
+                <button type=\"submit\" formaction=\"/visiteur/supprimer-fraishors\" class=\"button is-danger\">supprimer</button>
             </form>
-        </fieldset>
+        </div>
 {% endfor %}
-    </fieldset>
+    </div>
 
-    <center><code><a href=\"/visiteur/renseigner\">Retour en arriere</a></code></center><center><code><a href=\"/visiteur/fiche-validee\">Valider fiche frais</a></code></center>
+    <button class=\"button is-info\"><a href=\"/visiteur/renseigner\">Retour en arriere</a></button>
+    <button class=\"button is-info\"><a href=\"/visiteur/fiche-validee\">Valider fiche frais</a></button>
 
 
-</div>
+    </div>
 {% endblock %}
-", "visiteur/fichefrais.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates/visiteur/fichefrais.html.twig");
+", "visiteur/fichefrais.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates/visiteur/fichefrais.html.twig");
     }
 }

@@ -165,7 +165,7 @@
 		public static function validerFicheFrais( $visiteur ){
 
 			$bd = self::getConnexion() ;
-			$sql = "upmois FicheFrai set dateModif = CURDATE(), idEtat= 'VA' where idVisiteur= :0 and mois = DATE_FORMAT(CURDATE(), '%M')";
+			$sql = "update FicheFrais set dateModif = CURDATE(), idEtat= 'VA' where idVisiteur= :0 and mois = DATE_FORMAT(CURDATE(), '%M')";
 			$st = $bd->prepare( $sql ) ;
 			$st->execute( array( ":0" => $visiteur )) ;
 			$st->closeCursor() ;

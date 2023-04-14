@@ -57,35 +57,32 @@ class __TwigTemplate_3aee97026b71084be148192daef07de86b78d9b1f8ae30d2f4dd8352e46
 
         // line 4
         echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 5em auto; max-width: 300px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 40%; }
+    .box {background-color: #F4F6FC;}
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>";
-        // line 10
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 10, $this->source); })()), "html", null, true);
-        echo "! ✅</h1> 
-
-";
+        <div class=\"box\">
+            
+            <figure class=\"image is-160-85\">
+                <img src=";
         // line 13
-        echo "
-\t\t<fieldset class=\"anim-back\">
-\t\t<legend>Visiteur</legend>
-\t\t
-\t\t\t<form action=\"/connection/visiteur\" method=\"POST\">
-\t\t\t\tIdentifiant :<br/>
-\t\t\t\t<input type=\"text\" name=\"id\" require/><br/>
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("logo.gif"), "html", null, true);
+        echo " alt=\"Image\">
+            </figure><br/>
+            
+            <form action=\"/connection/visiteur\" method=\"POST\">
+                Identifiant :<br/>
+                <input type=\"text\" name=\"id\" require class=\"label\" value=\"lvillachane\"/>
+                Mot de passe :<br/>
+                <input type=\"password\" name=\"mdp\" require class=\"label\" value=\"jux7g\"/>
+                <br/>
+                <input type=\"submit\" value=\"Valider\" class=\"button is-primary\"/>
+            </form>\t
 
-\t\t\t\tMot de passe :<br/>
-\t\t\t\t<input type=\"password\" name=\"mdp\" require/><br/>
 
-\t\t\t\t<br/>
-\t\t\t\t<input type=\"submit\" value=\"Valider\"/>
-\t\t\t</form>\t
-\t\t
-\t\t</fieldset>\t
-</div>
+        </div>
+    </div>
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -104,7 +101,7 @@ class __TwigTemplate_3aee97026b71084be148192daef07de86b78d9b1f8ae30d2f4dd8352e46
 
     public function getDebugInfo()
     {
-        return array (  72 => 13,  67 => 10,  59 => 4,  52 => 3,  35 => 1,);
+        return array (  70 => 13,  59 => 4,  52 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -113,32 +110,30 @@ class __TwigTemplate_3aee97026b71084be148192daef07de86b78d9b1f8ae30d2f4dd8352e46
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 5em auto; max-width: 300px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 40%; }
+    .box {background-color: #F4F6FC;}
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>{{ controller_name }}! ✅</h1> 
+        <div class=\"box\">
+            
+            <figure class=\"image is-160-85\">
+                <img src={{ asset(\"logo.gif\") }} alt=\"Image\">
+            </figure><br/>
+            
+            <form action=\"/connection/visiteur\" method=\"POST\">
+                Identifiant :<br/>
+                <input type=\"text\" name=\"id\" require class=\"label\" value=\"lvillachane\"/>
+                Mot de passe :<br/>
+                <input type=\"password\" name=\"mdp\" require class=\"label\" value=\"jux7g\"/>
+                <br/>
+                <input type=\"submit\" value=\"Valider\" class=\"button is-primary\"/>
+            </form>\t
 
-{######################## VISITEUR ########################}
 
-\t\t<fieldset class=\"anim-back\">
-\t\t<legend>Visiteur</legend>
-\t\t
-\t\t\t<form action=\"/connection/visiteur\" method=\"POST\">
-\t\t\t\tIdentifiant :<br/>
-\t\t\t\t<input type=\"text\" name=\"id\" require/><br/>
-
-\t\t\t\tMot de passe :<br/>
-\t\t\t\t<input type=\"password\" name=\"mdp\" require/><br/>
-
-\t\t\t\t<br/>
-\t\t\t\t<input type=\"submit\" value=\"Valider\"/>
-\t\t\t</form>\t
-\t\t
-\t\t</fieldset>\t
-</div>
+        </div>
+    </div>
 {% endblock %}
-", "acceuil/index.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates/acceuil/index.html.twig");
+", "acceuil/index.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates/acceuil/index.html.twig");
     }
 }

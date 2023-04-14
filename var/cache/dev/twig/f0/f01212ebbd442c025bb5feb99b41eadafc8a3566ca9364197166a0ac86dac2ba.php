@@ -71,23 +71,24 @@ class __TwigTemplate_9e3f22b2b0d0135b2ea5be886346fed11b8416d62393cf2b7fe95caab70
 
         // line 6
         echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 5em auto; max-width: 500px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 30%; }
+    .box {background-color: #F4F6FC;}
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>";
-        // line 12
-        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
-        echo "! ✅</h1>
+    <div class=\"box\">
+    <div class=\"title is-2\">";
+        // line 13
+        echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 13, $this->source); })()), "html", null, true);
+        echo "!<div>
 
     
 ";
-        // line 15
+        // line 16
         echo "        \t\t
     
-\t<code><a href=\"/visiteur\">Retour en arriere</a></code>
-    
+\t<button class=\"button is-success\"><a href=\"/visiteur\">Retour en arriere</a></button>
+    </div>
 
 </div>
 ";
@@ -108,7 +109,7 @@ class __TwigTemplate_9e3f22b2b0d0135b2ea5be886346fed11b8416d62393cf2b7fe95caab70
 
     public function getDebugInfo()
     {
-        return array (  87 => 15,  81 => 12,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
+        return array (  88 => 16,  82 => 13,  73 => 6,  66 => 5,  53 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -119,21 +120,22 @@ class __TwigTemplate_9e3f22b2b0d0135b2ea5be886346fed11b8416d62393cf2b7fe95caab70
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 5em auto; max-width: 500px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 30%; }
+    .box {background-color: #F4F6FC;}
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>{{ controller_name }}! ✅</h1>
+    <div class=\"box\">
+    <div class=\"title is-2\">{{ controller_name }}!<div>
 
     
 {######################## Finalisaltion  ########################}        \t\t
     
-\t<code><a href=\"/visiteur\">Retour en arriere</a></code>
-    
+\t<button class=\"button is-success\"><a href=\"/visiteur\">Retour en arriere</a></button>
+    </div>
 
 </div>
 {% endblock %}
-", "visiteur/final.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates/visiteur/final.html.twig");
+", "visiteur/final.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates/visiteur/final.html.twig");
     }
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services https://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.project_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</parameter>
+    <parameter key="kernel.project_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.runtime_environment">%env(default:kernel.environment:APP_RUNTIME_ENV)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev</parameter>
-    <parameter key="kernel.cache_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/log</parameter>
+    <parameter key="kernel.build_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev</parameter>
+    <parameter key="kernel.cache_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="TwigBundle">Symfony\Bundle\TwigBundle\TwigBundle</parameter>
@@ -18,27 +18,27 @@
     </parameter>
     <parameter key="kernel.bundles_metadata" type="collection">
       <parameter key="FrameworkBundle" type="collection">
-        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/vendor/symfony/framework-bundle</parameter>
+        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/vendor/symfony/framework-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
       </parameter>
       <parameter key="TwigBundle" type="collection">
-        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/vendor/symfony/twig-bundle</parameter>
+        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/vendor/symfony/twig-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
       </parameter>
       <parameter key="TwigExtraBundle" type="collection">
-        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/vendor/twig/extra-bundle</parameter>
+        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/vendor/twig/extra-bundle</parameter>
         <parameter key="namespace">Twig\Extra\TwigExtraBundle</parameter>
       </parameter>
       <parameter key="SensioFrameworkExtraBundle" type="collection">
-        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/vendor/sensio/framework-extra-bundle/src</parameter>
+        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/vendor/sensio/framework-extra-bundle/src</parameter>
         <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
       </parameter>
       <parameter key="MakerBundle" type="collection">
-        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/vendor/symfony/maker-bundle/src</parameter>
+        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/vendor/symfony/maker-bundle/src</parameter>
         <parameter key="namespace">Symfony\Bundle\MakerBundle</parameter>
       </parameter>
       <parameter key="WebServerBundle" type="collection">
-        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/vendor/symfony/web-server-bundle</parameter>
+        <parameter key="path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/vendor/symfony/web-server-bundle</parameter>
         <parameter key="namespace">Symfony\Bundle\WebServerBundle</parameter>
       </parameter>
     </parameter>
@@ -70,14 +70,14 @@
     <parameter key="asset.request_context.base_path">null</parameter>
     <parameter key="asset.request_context.secure">null</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="cache.prefix.seed">_/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais.App_KernelDevDebugContainer</parameter>
+    <parameter key="cache.prefix.seed">_/mnt/c/Users/charl/Desktop/SIO/GSB-Frais.App_KernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
       <parameter key="cache_limiter" type="string">0</parameter>
@@ -86,13 +86,13 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/sessions</parameter>
+    <parameter key="session.save_path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/sessions</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="data_collector.templates" type="collection"/>
     <parameter key="twig.form.resources" type="collection">
       <parameter>form_div_layout.html.twig</parameter>
     </parameter>
-    <parameter key="twig.default_path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates</parameter>
+    <parameter key="twig.default_path">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates</parameter>
     <parameter key="maker.compatible_check.doctrine.supports_attributes">false</parameter>
     <parameter key="console.command.ids" type="collection"/>
   </parameters>
@@ -496,7 +496,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/http_cache</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -506,7 +506,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <tag name="container.private" package="symfony/framework-bundle" version="5.2"/>
@@ -632,7 +632,7 @@
       </argument>
       <argument>UTF-8</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</argument>
       <argument type="service">
         <service>
           <argument type="service" id="request_stack"/>
@@ -665,7 +665,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="filesystem"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</argument>
       <call method="setName">
         <argument>assets:install</argument>
       </call>
@@ -819,7 +819,7 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument>dev</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</argument>
       <call method="setName">
         <argument>debug:dotenv</argument>
       </call>
@@ -947,9 +947,9 @@
     <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="true">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>L1gOarBy4-</argument>
+      <argument>S6M4LR8aJN</argument>
       <argument>0</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/pools/app</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -961,50 +961,50 @@
     <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface" public="true">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>aip0e8iKDw</argument>
+      <argument>nfOrMd75Qw</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/pools/system</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.validator" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>GajhaGXr21</argument>
+      <argument>tp678DRnxD</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/pools/system</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.serializer" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>u2+nltqgrh</argument>
+      <argument>9vYKPcxFhu</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/pools/system</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.annotations" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>Nd40xaUIae</argument>
+      <argument>wCQ4BiK24I</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/pools/system</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.property_info" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
       <tag name="kernel.reset" method="reset"/>
-      <argument>7JWUemFHEV</argument>
+      <argument>oCLqLW+5yA</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/pools/system</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1014,7 +1014,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/pools/system</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/pools/system</argument>
       <argument type="service" id="logger" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1044,7 +1044,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/pools/app</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="logger" on-invalid="ignore"/>
@@ -1290,7 +1290,7 @@
       <argument type="service" id=".service_locator.WOytlHA.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev</argument>
+        <argument key="cache_dir">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -1329,7 +1329,7 @@
       <argument type="service" id="request_stack"/>
       <argument type="service" id="router.request_context" on-invalid="ignore"/>
       <argument type="service" id="logger" on-invalid="ignore"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</argument>
       <argument>true</argument>
     </service>
     <service id="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" class="Symfony\Bundle\FrameworkBundle\Controller\RedirectController" public="true">
@@ -1392,13 +1392,13 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/annotations.php</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/annotations.php</argument>
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!.*Controller$))#</argument>
       <argument>true</argument>
     </service>
     <service id="annotations.cache_adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter">
       <tag name="container.hot_path"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/annotations.php</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/annotations.php</argument>
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -1409,7 +1409,7 @@
     </service>
     <service id="secrets.vault" class="Symfony\Bundle\FrameworkBundle\Secrets\SodiumVault">
       <tag name="container.env_var_loader"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/config/secrets/%env(default:kernel.environment:APP_RUNTIME_ENV)%</argument>
       <argument type="service" id="secrets.decryption_key" on-invalid="ignore"/>
     </service>
     <service id="secrets.decryption_key" class="Symfony\Component\String\LazyString">
@@ -1418,7 +1418,7 @@
       <factory class="Symfony\Component\String\LazyString" method="fromCallable"/>
     </service>
     <service id="secrets.local_vault" class="Symfony\Bundle\FrameworkBundle\Secrets\DotenvVault">
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/.env.dev.local</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/.env.dev.local</argument>
     </service>
     <service id=".cache_connection.GD_MSZC" class="Symfony\Component\Cache\Adapter\AbstractAdapter">
       <argument>redis://localhost</argument>
@@ -1467,7 +1467,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/sessions</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -1499,7 +1499,7 @@
     <service id="session.handler.native_file" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\StrictSessionHandler">
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-          <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/sessions</argument>
+          <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/sessions</argument>
         </service>
       </argument>
     </service>
@@ -1531,7 +1531,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache/dev/twig</argument>
+        <argument key="cache">/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -1604,7 +1604,7 @@
     <service id="twig.template_iterator" class="Symfony\Bundle\TwigBundle\TemplateIterator">
       <argument type="service" id="kernel"/>
       <argument type="collection"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates</argument>
     </service>
     <service id="twig.template_cache_warmer" class="Symfony\Bundle\TwigBundle\CacheWarmer\TemplateCacheWarmer">
       <tag name="kernel.cache_warmer"/>
@@ -1615,9 +1615,9 @@
     <service id="twig.loader.native_filesystem" class="Twig\Loader\FilesystemLoader">
       <tag name="twig.loader"/>
       <argument type="collection"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</argument>
       <call method="addPath">
-        <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates</argument>
+        <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates</argument>
       </call>
     </service>
     <service id="twig.loader.chain" class="Twig\Loader\ChainLoader"/>
@@ -1643,7 +1643,7 @@
     <service id="twig.extension.code" class="Symfony\Bridge\Twig\Extension\CodeExtension">
       <tag name="twig.extension"/>
       <argument type="service" id="debug.file_link_formatter" on-invalid="ignore"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</argument>
       <argument>UTF-8</argument>
     </service>
     <service id="twig.extension.routing" class="Symfony\Bridge\Twig\Extension\RoutingExtension">
@@ -1705,9 +1705,9 @@
       <tag name="console.command"/>
       <tag name="container.no_preload"/>
       <argument type="service" id="twig"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</argument>
       <argument>%kernel.bundles_metadata%</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates</argument>
       <argument type="service" id="debug.file_link_formatter" on-invalid="null"/>
       <call method="setName">
         <argument>debug:twig</argument>
@@ -1789,8 +1789,8 @@
       <argument type="service" id="filesystem"/>
       <argument type="service" id="maker.autoloader_util"/>
       <argument type="service" id="maker.file_link_formatter"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates</argument>
     </service>
     <service id="maker.autoloader_finder" class="Symfony\Bundle\MakerBundle\Util\ComposerAutoloaderFinder">
       <argument>App</argument>
@@ -1945,7 +1945,7 @@
     </service>
     <service id="maker.maker.make_migration" class="Symfony\Bundle\MakerBundle\Maker\MakeMigration">
       <tag name="maker.command"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais</argument>
     </service>
     <service id="maker.maker.make_stimulus_controller" class="Symfony\Bundle\MakerBundle\Maker\MakeStimulusController">
       <tag name="maker.command"/>
@@ -1953,9 +1953,9 @@
     <service id="web_server.command.server_run" class="Symfony\Bundle\WebServerBundle\Command\ServerRunCommand">
       <tag name="console.command" command="server:run"/>
       <tag name="container.no_preload"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/public</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/public</argument>
       <argument>dev</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache</argument>
       <call method="setName">
         <argument>server:run</argument>
       </call>
@@ -1963,9 +1963,9 @@
     <service id="web_server.command.server_start" class="Symfony\Bundle\WebServerBundle\Command\ServerStartCommand">
       <tag name="console.command" command="server:start"/>
       <tag name="container.no_preload"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/public</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/public</argument>
       <argument>dev</argument>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache</argument>
       <call method="setName">
         <argument>server:start</argument>
       </call>
@@ -1973,7 +1973,7 @@
     <service id="web_server.command.server_stop" class="Symfony\Bundle\WebServerBundle\Command\ServerStopCommand">
       <tag name="console.command" command="server:stop"/>
       <tag name="container.no_preload"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache</argument>
       <call method="setName">
         <argument>server:stop</argument>
       </call>
@@ -1981,7 +1981,7 @@
     <service id="web_server.command.server_status" class="Symfony\Bundle\WebServerBundle\Command\ServerStatusCommand">
       <tag name="console.command" command="server:status"/>
       <tag name="container.no_preload"/>
-      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/var/cache</argument>
+      <argument>/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/var/cache</argument>
       <call method="setName">
         <argument>server:status</argument>
       </call>

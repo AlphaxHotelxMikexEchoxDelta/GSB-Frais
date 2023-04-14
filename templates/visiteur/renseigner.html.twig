@@ -4,17 +4,18 @@
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 5em auto; max-width: 400px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 38% ; }
+    .box {background-color: #F4F6FC;}
 </style>
 
+
 <div class="example-wrapper">
-    <h1>{{ controller_name }}! ✅ <code>{{mois}}</code></h1>
+    <div class="title is-2">{{ controller_name }}! <code>{{mois}}</code></div>
 
 {######################## Forfais ########################}
 
 {% if libelles is not empty %}
-    <fieldset>
+    <div class="box">
 	<legend>Frais Forfait</legend>
 	
 		<form action="/visiteur/renseigner/forfais" method="POST">
@@ -29,16 +30,16 @@
             </select><br/>
 
 			<br/>
-			<input type="submit" value="Valider"/>
+			<input type="submit" value="Valider" class="button is-primary"/>
 		</form>	
 		
-	</fieldset>
+	</div>
 {% endif %}
 
 {######################## Hors Forfais ########################}
 
 	</br>
-    <fieldset>
+    <div class="box">
 	<legend>Frais Hors Forfait</legend>
 	
 		<form action="/visiteur/renseigner/hors-forfais" method="POST">
@@ -49,29 +50,47 @@
 			<input type="text" name="libelle" required/><br/>
 
 			<br/>
-			<input type="submit" value="Valider"/>
+			<input type="submit" value="Valider" class="button is-primary"/>
 		</form>	
 		
-	</fieldset>
+	</div>
 
 
 {######################## Frais Valide ########################}
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    const $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+});
+
+</script>
+
 
 	<br/>
     {% if Frais is defined %}
-		<center>le frais: '<strong>{{Frais}}</strong>' à bien était ajouter</center>
+	    <div class="notification is-success is-light">
+  			<button class="delete"></button>
+ 			le frais: '<strong>{{Frais}}</strong>' à bien était ajouter
+		</div>
     {% else %}
-        <center>Aucun frais n'a etait ajouter à la fiche</center>
+        <div class="notification is-warning is-light">
+  			<button class="delete"></button>
+ 			 Aucun frais n'a etait ajouter à la fiche
+		</div>
     {% endif %}
 
 
 {######################## Fiche Valide ########################}
 	
 	<br/>
-	<code><a href="/visiteur">Retour en arriere</a></code>
-	<code><a href="/visiteur/finaliser-fiche">Finaliser la fiche</a></code>
-	
-
+	<div class="button is-info"><a href="/visiteur">Retour en arriere</a></div>
+	<div class="button is-info"><a href="/visiteur/finaliser-fiche">Finaliser la fiche</a></div>
 
 
 

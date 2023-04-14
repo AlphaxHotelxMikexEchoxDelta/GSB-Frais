@@ -63,10 +63,10 @@ class __TwigTemplate_89f595f93556f578e91d2f1dedb8b321538cdad414698e05518444d30fa
         // line 12
         $this->displayBlock('javascripts', $context, $blocks);
         // line 15
-        echo "    </head>
+        echo "
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\">
+    </head>
     <body>
-        
-
 
         ";
         // line 20
@@ -174,10 +174,10 @@ class __TwigTemplate_89f595f93556f578e91d2f1dedb8b321538cdad414698e05518444d30fa
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css\">
     </head>
     <body>
-        
-
 
         {% block body %}
         {% endblock %}
@@ -185,6 +185,6 @@ class __TwigTemplate_89f595f93556f578e91d2f1dedb8b321538cdad414698e05518444d30fa
     </body>
 
 </html>
-", "base.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates/base.html.twig");
+", "base.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates/base.html.twig");
     }
 }

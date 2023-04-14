@@ -71,19 +71,19 @@ class __TwigTemplate_3cfab9256a11d401680b48ad69b9df35c4abe8433ad27283a05e23319ea
 
         // line 6
         echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 5em auto; max-width: 400px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 38% ; }
+    .box {background-color: #F4F6FC;}
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>";
+    <div class=\"title is-2\">";
         // line 12
         echo twig_escape_filter($this->env, (isset($context["controller_name"]) || array_key_exists("controller_name", $context) ? $context["controller_name"] : (function () { throw new RuntimeError('Variable "controller_name" does not exist.', 12, $this->source); })()), "html", null, true);
-        echo "! ✅ <code>";
+        echo "! <code>";
         echo twig_escape_filter($this->env, (isset($context["mois"]) || array_key_exists("mois", $context) ? $context["mois"] : (function () { throw new RuntimeError('Variable "mois" does not exist.', 12, $this->source); })()), "html", null, true);
-        echo "</code></h1>
+        echo "</code></div>
 
-    <fieldset>
+    <div class=\"box\">
         <legend>Fiche Frais Forfais</legend>
 ";
         // line 16
@@ -91,25 +91,25 @@ class __TwigTemplate_3cfab9256a11d401680b48ad69b9df35c4abe8433ad27283a05e23319ea
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["FicheFrais"]) || array_key_exists("FicheFrais", $context) ? $context["FicheFrais"] : (function () { throw new RuntimeError('Variable "FicheFrais" does not exist.', 16, $this->source); })()), "ligneFraisForfait", [], "any", false, false, false, 16));
         foreach ($context['_seq'] as $context["_key"] => $context["Fiche"]) {
             // line 17
-            echo "        <fieldset>
+            echo "        <div class=\"box\">
                 libelle : ";
             // line 18
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "libelle", [], "any", false, false, false, 18), "html", null, true);
             echo "</br>
                 montant : ";
             // line 19
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "montant", [], "any", false, false, false, 19), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "quantite", [], "any", false, false, false, 19), "html", null, true);
             echo " 
-        </fieldset>
+        </div>
 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['Fiche'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 22
-        echo "    </fieldset>
+        echo "    </div>
 
-    <fieldset>
+    <div class=\"box\">
         <legend>Fiche Hors Forfais</legend>
 ";
         // line 26
@@ -117,7 +117,7 @@ class __TwigTemplate_3cfab9256a11d401680b48ad69b9df35c4abe8433ad27283a05e23319ea
         $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->source, (isset($context["FicheFrais"]) || array_key_exists("FicheFrais", $context) ? $context["FicheFrais"] : (function () { throw new RuntimeError('Variable "FicheFrais" does not exist.', 26, $this->source); })()), "ligneHorsForfait", [], "any", false, false, false, 26));
         foreach ($context['_seq'] as $context["_key"] => $context["Fiche"]) {
             // line 27
-            echo "        <fieldset>
+            echo "        <div class=\"box\">
                 libelle : ";
             // line 28
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "libelle", [], "any", false, false, false, 28), "html", null, true);
@@ -126,16 +126,16 @@ class __TwigTemplate_3cfab9256a11d401680b48ad69b9df35c4abe8433ad27283a05e23319ea
             // line 29
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["Fiche"], "montant", [], "any", false, false, false, 29), "html", null, true);
             echo " 
-        </fieldset>
+        </div>
 ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['Fiche'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
         // line 32
-        echo "    </fieldset>
+        echo "    </div>
 
-        <code><a href=\"/visiteur\">Retour en arriere</a></code>
+        <button class=\"button is-info\"><a href=\"/visiteur\">Retour en arriere</a></button>
 
 </div>
 ";
@@ -167,36 +167,36 @@ class __TwigTemplate_3cfab9256a11d401680b48ad69b9df35c4abe8433ad27283a05e23319ea
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 5em auto; max-width: 400px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 38% ; }
+    .box {background-color: #F4F6FC;}
 </style>
 
 <div class=\"example-wrapper\">
-    <h1>{{ controller_name }}! ✅ <code>{{mois}}</code></h1>
+    <div class=\"title is-2\">{{ controller_name }}! <code>{{mois}}</code></div>
 
-    <fieldset>
+    <div class=\"box\">
         <legend>Fiche Frais Forfais</legend>
 {% for Fiche in FicheFrais.ligneFraisForfait %}
-        <fieldset>
+        <div class=\"box\">
                 libelle : {{Fiche.libelle}}</br>
-                montant : {{Fiche.montant}} 
-        </fieldset>
+                montant : {{Fiche.quantite}} 
+        </div>
 {% endfor %}
-    </fieldset>
+    </div>
 
-    <fieldset>
+    <div class=\"box\">
         <legend>Fiche Hors Forfais</legend>
 {% for Fiche in FicheFrais.ligneHorsForfait %}
-        <fieldset>
+        <div class=\"box\">
                 libelle : {{Fiche.libelle}}</br>
                 montant : {{Fiche.montant}} 
-        </fieldset>
+        </div>
 {% endfor %}
-    </fieldset>
+    </div>
 
-        <code><a href=\"/visiteur\">Retour en arriere</a></code>
+        <button class=\"button is-info\"><a href=\"/visiteur\">Retour en arriere</a></button>
 
 </div>
-{% endblock %}", "visiteur/consulter.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/GSB-Frais/templates/visiteur/consulter.html.twig");
+{% endblock %}", "visiteur/consulter.html.twig", "/mnt/c/Users/charl/Desktop/SIO/GSB-Frais/templates/visiteur/consulter.html.twig");
     }
 }

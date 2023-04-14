@@ -4,37 +4,38 @@
 
 {% block body %}
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .example-wrapper { margin: 5em auto; max-width: 400px; width: 100%; font: 20px/1.5 sans-serif; position:absolute; margin-left: 38% ; }
+    .box {background-color: #F4F6FC;}
 </style>
 
+
 <div class="example-wrapper">
-    <h1>{{ controller_name }} {{id}} ✅</h1>
+    <div class="title is-1">{{ controller_name }} {{id}}</div>
     
 {######################## Renseigner  ########################}        		
-    <fieldset>
+    <div class="box">
 	<legend>Renseigner Fiche Frais</legend>
 	
 		<code><a href="/visiteur/renseigner">pour ce mois ({{mois}})</a></code>
 		
-	</fieldset></br>
+	</div></br>
 
 {######################## Consulter ########################}
-    <fieldset>
+    <div class="box">
 	<legend>Consulter Fiche Frais</legend>
 	
 		<form action="/visiteur/consulter" method="POST">
 			Selectionner le mois à consulter :<br/>
 			<input type="month" name="month" required/><br/>
 			<br/>
-			<input type="submit" value="Valider"/>
+			<input type="submit" value="Valider" class="button is-primary"/>
 		</form>	
 		
-	</fieldset>	
+	</div>	
     
 {######################## Deconnection ########################}
 	
-	<code><a href="deconnection">Deconnection</a></code>
+	<div class="button is-danger"><a href="deconnection">Deconnection</a></div>
 
 </div>
 {% endblock %}
